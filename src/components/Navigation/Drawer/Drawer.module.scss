@@ -1,0 +1,36 @@
+.drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  max-width: 300px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #a882a0 0%, #901783 100%);
+  transform:  translateX(0px);
+  transition: .3s ease-in;
+  z-index: 90;
+}
+.drawer.close {
+  transform: translateX(-300px);
+}
+.drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.drawer ul li {
+  margin-bottom: 15px;
+}
+.drawer ul li a{
+  color: #f7fafc;
+  font-size: 30px;
+  text-decoration: none;
+  position: relative;
+  padding: 0 20px 10px 20px;
+  transition: opacity .3s;
+}
+.drawer ul li a:hover, .active {
+  opacity: .7;
+}
